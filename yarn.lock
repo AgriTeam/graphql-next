@@ -27,19 +27,20 @@
     ramda "0.25.0"
     shortid "2.2.8"
 
-"@gql2ts/from-schema@1.4.3":
-  version "1.4.3"
-  resolved "https://registry.yarnpkg.com/@gql2ts/from-schema/-/from-schema-1.4.3.tgz#afb96babe7c96c4d4affad48440c2bac18fc0b4c"
+"@gql2ts/from-schema@1.7.1":
+  version "1.7.1"
+  resolved "https://registry.yarnpkg.com/@gql2ts/from-schema/-/from-schema-1.7.1.tgz#42215b6e228b0c788156224e105fb75ab92de314"
   dependencies:
-    "@gql2ts/language-typescript" "^1.4.3"
-    "@gql2ts/util" "^1.4.3"
-    graphql ">= 0.10 <0.12"
+    "@gql2ts/language-typescript" "^1.7.0"
+    "@gql2ts/util" "^1.7.0"
+    dedent "^0.7.0"
+    graphql ">= 0.10 <1.0.0"
 
-"@gql2ts/language-typescript@^1.4.3":
-  version "1.4.3"
-  resolved "https://registry.yarnpkg.com/@gql2ts/language-typescript/-/language-typescript-1.4.3.tgz#52837b33c8cb9d35ff80ac69212172023c1055e0"
+"@gql2ts/language-typescript@^1.7.0":
+  version "1.7.0"
+  resolved "https://registry.yarnpkg.com/@gql2ts/language-typescript/-/language-typescript-1.7.0.tgz#0ce5091525d78c9d8f0d06b92c1dc70dff1dcbe1"
   dependencies:
-    "@gql2ts/util" "^1.4.3"
+    "@gql2ts/util" "^1.7.0"
     humps "^2.0.0"
     typescript "^2.2.2"
 
@@ -49,17 +50,15 @@
   dependencies:
     "@gql2ts/util" "^1.5.0"
 
-"@gql2ts/util@^1.4.3":
-  version "1.4.3"
-  resolved "https://registry.yarnpkg.com/@gql2ts/util/-/util-1.4.3.tgz#365ad149af213d08affea022bc2de1cace4f4c5e"
-  dependencies:
-    graphql ">= 0.10 <0.12"
-
 "@gql2ts/util@^1.5.0":
   version "1.5.0"
   resolved "https://registry.yarnpkg.com/@gql2ts/util/-/util-1.5.0.tgz#03146a58efcb255c32aa7b640fa2ed3c42e4adba"
   dependencies:
     graphql ">= 0.10 <1.0.0"
+
+"@gql2ts/util@^1.7.0":
+  version "1.7.0"
+  resolved "https://registry.yarnpkg.com/@gql2ts/util/-/util-1.7.0.tgz#eb719ad155d80631c2dfb703c74fd8e72be36a48"
 
 "@mrmlnc/readdir-enhanced@^2.2.1":
   version "2.2.1"
@@ -1789,6 +1788,10 @@ decompress-response@^3.3.0:
   dependencies:
     mimic-response "^1.0.0"
 
+dedent@^0.7.0:
+  version "0.7.0"
+  resolved "https://registry.yarnpkg.com/dedent/-/dedent-0.7.0.tgz#2495ddbaf6eb874abb0e1be9df22d2e5a544326c"
+
 deep-extend@~0.4.0:
   version "0.4.2"
   resolved "https://registry.yarnpkg.com/deep-extend/-/deep-extend-0.4.2.tgz#48b699c27e334bf89f10892be432f6e4c7d34a7f"
@@ -2584,12 +2587,6 @@ graphql-tools@2.21.0:
     iterall "^1.1.3"
     uuid "^3.1.0"
 
-"graphql@>= 0.10 <0.12":
-  version "0.11.7"
-  resolved "https://registry.yarnpkg.com/graphql/-/graphql-0.11.7.tgz#e5abaa9cb7b7cccb84e9f0836bf4370d268750c6"
-  dependencies:
-    iterall "1.1.3"
-
 "graphql@>= 0.10 <1.0.0":
   version "0.13.1"
   resolved "https://registry.yarnpkg.com/graphql/-/graphql-0.13.1.tgz#9b3db3d8e40d1827e4172404bfdd2e4e17a58b55"
@@ -3257,10 +3254,6 @@ isurl@^1.0.0-alpha5:
   dependencies:
     has-to-string-tag-x "^1.2.0"
     is-object "^1.0.1"
-
-iterall@1.1.3:
-  version "1.1.3"
-  resolved "https://registry.yarnpkg.com/iterall/-/iterall-1.1.3.tgz#1cbbff96204056dde6656e2ed2e2226d0e6d72c9"
 
 iterall@^1.1.3, iterall@^1.2.0:
   version "1.2.2"
@@ -4432,16 +4425,7 @@ pg-pool@~2.0.3:
   version "2.0.3"
   resolved "https://registry.yarnpkg.com/pg-pool/-/pg-pool-2.0.3.tgz#c022032c8949f312a4f91fb6409ce04076be3257"
 
-pg-promise@8.2.1:
-  version "8.2.1"
-  resolved "https://registry.yarnpkg.com/pg-promise/-/pg-promise-8.2.1.tgz#af11f4009a8d9d0e0d37d2915a5e7e0f66865838"
-  dependencies:
-    manakin "0.5.1"
-    pg "7.4.1"
-    pg-minify "0.5.4"
-    spex "2.0.2"
-
-pg-promise@^8.2.1:
+pg-promise@8.2.2, pg-promise@^8.2.1:
   version "8.2.2"
   resolved "https://registry.yarnpkg.com/pg-promise/-/pg-promise-8.2.2.tgz#079a71eb358ef7f27f78f4bc3653a1f4bb9266e6"
   dependencies:
